@@ -1,0 +1,21 @@
+while True:
+    idade = input("Digite sua idade (ou 'sair' para encerrar): ")
+    
+    if idade.lower() == 'sair':  # Permite sair do loop ao digitar 'sair'
+        print("Programa encerrado.")
+        break
+
+    idade = int(idade)  # Converte a idade para inteiro
+
+    if 0 <= idade <= 10:
+        print("Olá criança.")
+    elif 11 <= idade <= 14:
+        print("Olá, você é um(a) pré-adolescente.")
+    elif 15 <= idade <= 17:
+        print("Parabéns, você já pode ser um eleitor.")
+    elif 18 <= idade <= 21:
+        print("Além de eleitor, você já tem idade militar.")
+    elif idade > 21:
+        print("Bem, agora já está na hora de sair de casa e seguir sua vida...")
+    else:
+        print("Idade inválida. Por favor, insira um número inteiro positivo.")
